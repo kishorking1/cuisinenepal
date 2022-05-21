@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.cuisinenepal.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_upload"
+        android:name="com.example.cuisinenepal.ui.Upload.GalleryFragment"
+        android:label="@string/upload"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_upload_to_uploadFoodItems"
+            app:destination="@id/uploadFoodItems" />
+        <action
+            android:id="@+id/action_nav_upload_to_uploadBurger"
+            app:destination="@id/uploadBurger" />
+        <action
+            android:id="@+id/action_nav_upload_to_uploadFastFood"
+            app:destination="@id/uploadFastFood" />
+        <action
+            android:id="@+id/action_nav_upload_to_uploadRestaurant2"
+            app:destination="@id/uploadRestaurant2" />
+        <action
+            android:id="@+id/action_nav_upload_to_uploadChicken"
+            app:destination="@id/uploadChicken" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Reports"
+        android:name="com.example.cuisinenepal.ui.Reports.SlideshowFragment"
+        android:label="@string/report"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/uploadRestaurant2"
+        android:name="com.example.cuisinenepal.uploadRestaurant"
+        android:label="activity_upload_restaurant"
+        tools:layout="@layout/activity_upload_restaurant" />
+    <activity
+        android:id="@+id/uploadChicken"
+        android:name="com.example.cuisinenepal.uploadChicken"
+        android:label="activity_upload_chicken"
+        tools:layout="@layout/activity_upload_chicken" />
+    <activity
+        android:id="@+id/uploadFoodItems"
+        android:name="com.example.cuisinenepal.uploadFoodItems"
+        android:label="activity_upload_food_items"
+        tools:layout="@layout/activity_upload_food_items" />
+    <activity
+        android:id="@+id/uploadBurger"
+        android:name="com.example.cuisinenepal.uploadBurger"
+        android:label="activity_upload_burger"
+        tools:layout="@layout/activity_upload_burger" />
+    <activity
+        android:id="@+id/uploadFastFood"
+        android:name="com.example.cuisinenepal.uploadFastFood"
+        android:label="activity_upload_fast_food"
+        tools:layout="@layout/activity_upload_fast_food" />
+</navigation>

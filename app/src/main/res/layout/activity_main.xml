@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Orangered"
+
+
+
+
+    >
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="360dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="648dp"
+        android:background="#DC3939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/vegetables"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="278dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:background="#DC3939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/cuisine_nepal_1"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="147dp"
+        android:layout_height="69dp"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/american_captain"
+        android:text="login "
+        android:textSize="34sp"
+        app:iconTint="#00D6C7C7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cutlery_1" />
+
+    <TextView
+        android:id="@+id/textviewwelcome"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/american_captain"
+        android:text="welcome to  our food delievery app"
+        android:textColor="#F4F0F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.416"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="321dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="28dp"
+        android:text="Order Food from the widest range of Restaurant"
+        android:textColor="#FBF8F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
